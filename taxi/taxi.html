@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScipt Games</title>
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="taxi.css">
+</head>
+<body>
+    <!-- header with menu-->
+     <header>
+        <nav class="main-nav">
+            <h1 class="main-nav__title">Manju</h1>
+            <ul class="navigation">
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../sliding-puzzle/slider.html">Sliding-Puzzle</a></li>
+              <li><a href="../snake/snake.html">Snake</a></li>
+              <li><a href="../taxi/taxi.html">Taxi</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <!-- content -->
+     <main>
+        <div style="visibility: hidden">
+          <img
+            border="0"
+            id="taxi"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcAfoRtNY1vWpnBrNDFFotBPcKMYZNIebzvC1fyE4Vs83uyUrint0HnabZqhaIOzTmz5vRQ2JCkxfbvoQvEGsRFD6OPO37Sj55Ws9YP8Z3j1UQJTaWW2gn8-kcm9lySaz_3DfDAjQy9jtq/s1600/taxi.png"
+          />
+    
+          <img
+            border="0"
+            id="target"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYD7yek_6StrCK90kY-SgusUir-CZGgpyP43CqUeNdxqHpV8FIj1twscbgbawDyDQO5l5Y3DOlNTDKsJdQoATDPRyt7CRK2y6vdJjhoLytkomK4YKxEx8xK-Ou6VeHn8t4b1ZeOSMrO0Tz/s1600/coin.png"
+          />
+    
+          <img
+            border="0"
+            id="up_ambulance"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlKoraqfsDyhfAN77HH9kQLCBgMpKsp32wVrujEHFy0F75M_olPx8zdR9_3zQT2r3yDGEdIhyphenhyphenvXi7L1p3E_ln2bqaO5XhWuxkr7Lvh5OSKqVUa4PakK7aLLxVWkLlpPEd0k4wAuR0wUzc-/s1600/ambulance.png"
+          />
+    
+          <img
+            border="0"
+            id="up_audi"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-lQ-a3x6y67E5zrjuga_iY_nqQ3448PtKF94NEkL69HQHNPyi2BtiqGlCEK5cwpwb4IuwwYBMeK97ByQRRaDZ2QVln26ST2hrGlAHnqkn1i8Yrr0cdRgEOCGrPjWVt5i81FeBGFItbFdL/s1600/audi.png"
+          />
+    
+          <img
+            border="0"
+            id="up_car"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjolVuxmBZMbPQtsZFdkjVBjoMcb7WJU1mmuSIlDLzBMvdvvvwgLCeeaJ7zXTTUCm7vTxJ8R3yZ2qVOgOX_l_3HsvSN_8wocQfaAK-9D38ubYh95ayq5EjtaDi-73EuF6LjqacFLvk84YQO/s1600/car.png"
+          />
+    
+          <img
+            border="0"
+            id="up_mini_truck"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ_PhoY-IvHB-CeLD2akYprrcWDmIrU7PuyekhXN6vy2H_PgAdqba7lDI6Kgms2vO1jeXGy8AuNW21B2y_-wKV1SwcSzHWFy8vf1WC2T4KUSEnpSNoWEFl-CN7xZBCe1hdb0ykY7NMGjdD/s1600/mini_truck.png"
+          />
+    
+          <img
+            border="0"
+            id="up_mini_van"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTDHriB19wHrZ1cY1H6JltEv6Cnz8XLW15wNfpMcXydYnHqKN9K_BStK6_c37A-khoIIkhT2Nx93RskLAPq5OFak2STE_g2SCf9s9nf8PgzWXq6wghXlz3bGNmrQA3Sg34y_C38DJd5Wfk/s1600/mini_van.png"
+          />
+    
+          <img
+            border="0"
+            id="up_police"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0xlWBY6Vx67m1nXfhOoEpe8iwjSsvk2LzfgJ68nCQx7MlNsZOaeiNU73lJRdQdi8DRf3zIXeWh_uA2agBx64TkORqkOfRxJsEFWEhb5fGc9dAayeMgldsyjUpAnXEUR0c_yhiPvpv0MMV/s1600/police.png"
+          />
+    
+          <img
+            border="0"
+            id="up_truck"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCQTJwxf3Rn6-P4NvfLKN6BvG5LEOYtYU9S3B2MOzzzmf1fqECJCgOKYCLYaXBpGf0Yx-uQvhkP_eebUhxPFmua96dRKITczix-FouzLP_QzHKpGShEYNCPUeGV1Ay8lc_HRN-AneaREa5/s1600/truck.png"
+          />
+    
+          <img
+            border="0"
+            id="up_viper"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb3JfXPxkuc8M0PviQzxKrrsPG9Crj47auZNLOSkayY5w8sfLH5GaX3SsAc8sShwfA3cwyQVJO61dNTujS1gkn9DMarUsqjB_upXCVPKGPEXUeBWWZV0g0QTXRB_AtYxjAPvNt3OJYkucq/s1600/viper.png"
+          />
+    
+          <img
+            border="0"
+            id="down_ambulance"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghsn19ic_IZzQvVrWAJGYF6-fjj-aKfmIA6wVbiRuIl656EGPXAmDRUlDv7Xha7ZpxCSAuQgcuacAuAFUzsfKQV1PCRaH-sMX6fM3lq17KnZ7OINLtV1U3LT6ildSi0eaQZjZxnoEo7kJP/s1600/down_ambulance.png"
+          />
+    
+          <img
+            border="0"
+            id="down_audi"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlS_XLvSJMvfVXIeLAPuObB11KMJlwM1A-XnmdkX-W3eOWnO5QErRQyppVXKOZgR8sTX5p_8b0sJZlgxxujeZmb4c6XhFASghNAMcUrQtrgYkUJp_xlkWF7FObFPkIPx6I6NU7qkkJCmdi/s1600/down_audi.png"
+          />
+    
+          <img
+            border="0"
+            id="down_car"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0Cr1ms02oV-GIFNxyHef80eC6W0IsAJLwxLtI6duIbOOt6qNHokWt6Oq7hH-nQYv6U3ymJNcz2X0LbLKULcuhU7Mbb_cBdaRafBZUtDj6X9v-W69ypNzbLTs_QN8sKZAzGoK1bonCujW5/s1600/down_car.png"
+          />
+    
+          <img
+            border="0"
+            id="down_mini_truck"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGDOub77xv6IEH2gx6oenqo_TqUrDfr5LGBrNB8IbOf3Igac7SpA7fpe_rvxN6UZ8_SfTht0yqlVTyqUVbP-Wa1QIrzu-3OiyhbsXG_pltA6c4QYEYem91kH1_j3sCiIDsdFMqFV-JWNKn/s1600/down_mini_truck.png"
+          />
+    
+          <img
+            border="0"
+            id="down_mini_van"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq7Z88QZcv6_7Kr0IkYaVBAgm9sT58j9kyh5GoUNmcYDX1k87t98FJAMClY6E2-uQ7VvbIwTatY6Io00nQ5MhyxQVdpJsCP27ydOpylZCezL0M6wMw6wP_LE5pfxCDyGD4qehlqwlwVFPl/s1600/down_mini_van.png"
+          />
+    
+          <img
+            border="0"
+            id="down_police"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlgZVFjTtnA10Y7wOPKr8b5ruqU_m6LSyHVa9HMgZ1XOLiKdj-LZ94jWd3nfrOr8JNUPIMaNFCRsJz0I7JdO3lYcXOvSwvpM0dyLECk-wP8RNjp5Z6pKh9NC21XHRz5074b8a_whc6ZF-5/s1600/down_police.png"
+          />
+    
+          <img
+            border="0"
+            id="down_truck"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho3Ue3b3LOqrdFew2Ru8t8FBgX_kCeij9zAQmjlJ_O-JFR44JWGol07BqqOERifOYYyns7VWbOX_DnPXX09zrHKiJXH2mEeugxdh0TJ2jPv4lD3bFcuHo3F8TYz0WjTDMfJnAxSdcBO-oo/s1600/down_truck.png"
+          />
+    
+          <img
+            border="0"
+            id="down_viper"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhm08NfQQa4v2NcmY-GbdhbREkgaSKemd1oceiYscaKlu8rRyGUDLeMrG5YTKJ03iyM1pjwwwYhW2cPAdJP_CTxszqHxuZsltI-jOeIy3T_klYRz-WNW8cCn0O0Namn2d95NPIPd02OdGeh/s1600/down_viper.png"
+          />
+        </div>
+    
+        <main class="container">
+          <div align="center">
+            <canvas
+              id="tanji"
+              width="416"
+              height="400"></canvas>
+          </div>
+      
+          <div class="control">
+            <p>You control the Yellow Taxi.</p>
+            <div>
+              <img
+              border="0"
+              id="taxi"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcAfoRtNY1vWpnBrNDFFotBPcKMYZNIebzvC1fyE4Vs83uyUrint0HnabZqhaIOzTmz5vRQ2JCkxfbvoQvEGsRFD6OPO37Sj55Ws9YP8Z3j1UQJTaWW2gn8-kcm9lySaz_3DfDAjQy9jtq/s1600/taxi.png"
+            />
+            </div>
+            <ul>
+              <li>Goal : Collect coins</li>
+              <li>Fail : If fail to collect coins or hit other vehicles</li>
+              <li>Use arrow keys to drive</li>
+              <li>Please refresh the page after first visit.</li>
+            </ul>
+          </div>
+        </main>
+    
+        <script src="taxi.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+canvas {
+    border: 10px solid #d3d3d3; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 3rem auto 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+.control {
+    margin-top: 2rem;
+}
