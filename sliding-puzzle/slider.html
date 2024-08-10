@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sliding Puzzle</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <!-- header with menu -->
+    <header>
+        <nav class="main-nav">
+            <h1 class="main-nav__title">Manju</h1>
+            <ul class="navigation">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../sliding-puzzle/slider.html">Sliding-Puzzle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <div id="game-board" class="game-container"></div>
+        </section>
+        <div class="game-controls">
+            <input type="number" id="numberInput" class="number-input" min="5" max="100" step="1" value="4" placeholder="Custom" />
+            <button id="easy">Easy</button>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+            <button id="shuffle">Shuffle</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-container">
+                <div class="modal-title">
+                    <h1>Congratulations!</h1>
+                    <span id="close" class="close">&times;</span>
+                </div>
+                <div class="modal-content">
+                    <div class="message">You won! well done! <button id="playAgain" class="play-again">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="slider.js"></script>
+</body>
+</html>
