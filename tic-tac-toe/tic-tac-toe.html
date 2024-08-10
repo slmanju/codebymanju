@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+    <!-- header with menu-->
+     <header>
+        <nav class="main-nav">
+            <h1 class="main-nav__title">Manju</h1>
+            <ul class="navigation">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../sliding-puzzle/slider.html">Sliding-Puzzle</a></li>
+                <li><a href="../snake/snake.html">Snake</a></li>
+                <li><a href="../taxi/taxi.html">Taxi</a></li>
+                <li><a href="../tic-tac-toe/tic-tac-toe.html">Tic-Tac-Toe</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <!-- content -->
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="game-container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Modal HTML -->
+        <div id="winModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalMessage"></p>
+                <button id="newGameButton">Start New Game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>
