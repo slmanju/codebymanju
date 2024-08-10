@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #181818; /* Dark gray background */
+  --text-color: #e0e0e0; /* Light gray for text */
+  --secondary-text-color: #b0b0b0; /* Softer gray for secondary text */
+  --primary-color: #008080; /* Teal for highlights */
+  --secondary-color: #ff7043; /* Orange for hover effects */
+  --primary-shadow: #8e9eab;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.8rem; /* Increased line height for readability */
+  --transition: 0.3s;
+}
+
+/** reset defaults **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-nav__title {
+    color: var(--primary-color); /* Teal color for the title */
+    font-family: var(--heading-font-family);
+    font-size: 2rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 1.9rem;
+}
+
+.navigation a {
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navigation ul li {
+    font-weight: var(--bold-font);
+}
+
+.about {
+    padding: 3rem; /* Increased padding for more space */
+    max-width: 1200px; /* Constrain the width */
+    margin: 0 auto; /* Center the section */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for mobile view */
+    align-items: center; /* Center items horizontally */
+    gap: 2rem; /* Add space between items */
+    text-align: center; /* Center text */
+}
+
+.about-image {
+    max-width: 250px; /* Adjust size for better fit */
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    border: 4px solid var(--primary-color); /* Teal border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    margin-bottom: 2rem; /* Space below the image */
+}
+
+.about-text {
+    max-width: 600px; /* Limit text width for readability */
+    line-height: 1.8rem; /* Improved line height for readability */
+}
+
+.about-text h2 {
+    font-size: 1.8rem; /* Slightly smaller font size */
+    margin-bottom: 1rem; /* Space below heading */
+    color: var(--primary-color); /* Teal color */
+}
+
+.about-text p {
+    font-size: 1rem; /* Standard font size */
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+    color: var(--text-color); /* Light gray text */
+    font-weight: var(--normal-font); /* Normal weight */
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+    margin-top: 1rem; /* Space above the links */
+}
+
+.social-link {
+    color: var(--primary-color); /* Text color */
+    font-size: 1.5rem; /* Adjust icon size as needed */
+    font-weight: var(--bold-font); /* Make text bold */
+    text-decoration: none; /* Remove underline */
+    transition: color var(--transition); /* Smooth color transition */
+}
+
+.social-link:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
