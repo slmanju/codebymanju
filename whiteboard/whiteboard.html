@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Whiteboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="whiteboard.css">
+</head>
+<body>
+    <main class="container">
+        <div class="toolbar" id="toolbar">
+            <button class="toolbar-button" id="pencil"><i class="fas fa-pencil-alt"></i></button>
+            <button class="toolbar-button" id="rectangle"><i class="fas fa-square"></i></button>
+            <button class="toolbar-button" id="circle"><i class="fas fa-circle"></i></button>
+            <button class="toolbar-button" id="text"><i class="fas fa-font"></i></button>
+            <button class="toolbar-button" id="select"><i class="fas fa-hand-pointer"></i></button>
+            <button class="toolbar-button" id="delete"><i class="fas fa-trash"></i></button>
+            <button class="toolbar-button" id="clear"><i class="fas fa-eraser"></i></button>
+            <input type="color" id="color-picker" class="toolbar-button">
+            <input type="range" id="thickness-picker" min="1" max="30" value="1" class="toolbar-button">
+
+            <!-- <button class="toolbar-button" id="undo"><i class="fas fa-undo"></i></button>
+            <button class="toolbar-button" id="redo"><i class="fas fa-redo"></i></button>
+            <button class="toolbar-button" id="grid"><i class="fa-solid fa-table-cells-large"></i></button>
+            <button class="toolbar-button" id="download"><i class="fas fa-download"></i></button> -->
+        </div>
+        <canvas id="whiteboard" width="800" height="600"></canvas>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <script src="whiteboard.js"></script>
+</body>
+</html>
